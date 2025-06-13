@@ -1,0 +1,22 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:34:25: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdc'
+   34 |     emac_config.smi_gpio.mdc = ETH_MDC_GPIO;
+      |                         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:35:25: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdio'
+   35 |     emac_config.smi_gpio.mdio = ETH_MDIO_GPIO;
+      |                         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:43:15: error: 'eth_phy_config_t' has no member named 'ref_clk_mode'
+   43 |     phy_config.ref_clk_mode = ETH_CLOCK_GPIO0_IN;
+      |               ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:43:31: error: 'ETH_CLOCK_GPIO0_IN' undeclared (first use in this function)
+   43 |     phy_config.ref_clk_mode = ETH_CLOCK_GPIO0_IN;
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:43:31: note: each undeclared identifier is reported only once for each function it appears in
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:45:26: error: implicit declaration of function 'esp_eth_phy_new_lan8720'; did you mean 'esp_eth_phy_new_lan87xx'? [-Wimplicit-function-declaration]
+   45 |     esp_eth_phy_t *phy = esp_eth_phy_new_lan8720(&phy_config);  // <- correto p/ LAN8720
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                          esp_eth_phy_new_lan87xx
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:45:26: error: initialization of 'esp_eth_phy_t *' {aka 'struct esp_eth_phy_s *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

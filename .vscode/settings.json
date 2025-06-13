@@ -1,0 +1,13 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/home/a/Downloads/esp-idf-v5.4.1",
+    "idf.pythonInstallPath": "/home/a/anaconda3/bin/python3",
+    "idf.openOcdConfigs": [
+        "board/esp32-ethernet-kit-3.3v.cfg"
+    ],
+    "idf.port": "/dev/ttyS0",
+    "idf.toolsPath": "/home/a/Downloads/esp-idf-v5.4.1/tools",
+    "files.associations": {
+        "nvs_flash.h": "c"
+    }
+}

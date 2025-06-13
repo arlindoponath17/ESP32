@@ -1,0 +1,10 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:49:25: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdc'
+   49 |     emac_config.smi_gpio.mdc = ETH_MDC_GPIO;
+      |                         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:50:25: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdio'
+   50 |     emac_config.smi_gpio.mdio = ETH_MDIO_GPIO;
+      |                         ^
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

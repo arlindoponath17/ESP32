@@ -1,0 +1,135 @@
+[  0%] Built target partition_table_bin
+[  0%] Built target memory.ld
+[  0%] Built target custom_bundle
+[  0%] Built target sections.ld.in
+[  0%] Built target _project_elf_src
+[  0%] Performing build step for 'bootloader'
+[  0%] Built target __idf_esp_https_ota
+[  1%] Built target _project_elf_src
+[  1%] Built target __idf_esp_http_server
+[  5%] Built target __idf_log
+[  1%] Built target __idf_esp_http_client
+[ 13%] Built target __idf_esp_rom
+[ 15%] Built target __idf_esp_common
+[  2%] Built target __idf_tcp_transport
+[  2%] Built target __idf_esp_gdbstub
+[ 25%] Built target __idf_esp_hw_support
+[ 26%] Built target __idf_esp_system
+[  3%] Built target __idf_esp_adc
+[ 34%] Built target __idf_efuse
+[  4%] Built target __idf_esp-tls
+[ 55%] Built target __idf_bootloader_support
+[  5%] Built target __idf_http_parser
+[ 56%] Built target __idf_esp_bootloader_format
+[  6%] Built target __idf_esp_wifi
+[ 58%] Built target __idf_spi_flash
+[  7%] Built target __idf_esp_coex
+[ 65%] Built target __idf_hal
+[ 67%] Built target __idf_micro-ecc
+[ 15%] Built target __idf_wpa_supplicant
+[ 16%] Built target __idf_esp_netif
+[ 91%] Built target __idf_soc
+[ 25%] Built target __idf_lwip
+[ 93%] Built target __idf_xtensa
+[ 26%] Built target __idf_vfs
+[ 95%] Built target __idf_main
+[ 26%] Built target __idf_esp_vfs_console
+[ 98%] Built target bootloader.elf
+[ 27%] Built target __idf_esp_phy
+[100%] Built target gen_project_binary
+[ 28%] Built target __idf_driver
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[100%] Built target bootloader_check_size
+[ 28%] Built target __idf_esp_driver_ledc
+[100%] Built target app
+[ 28%] No install step for 'bootloader'
+[ 29%] Built target __idf_esp_driver_i2c
+[ 29%] Completed 'bootloader'
+[ 29%] Built target __idf_esp_driver_sdm
+[ 29%] Built target __idf_esp_driver_rmt
+[ 30%] Built target bootloader
+[ 31%] Built target __idf_esp_driver_dac
+[ 31%] Built target __idf_esp_driver_sdio
+[ 31%] Built target __idf_esp_driver_sdspi
+[ 32%] Built target __idf_esp_driver_sdmmc
+[ 33%] Built target __idf_sdmmc
+[ 33%] Built target __idf_esp_driver_i2s
+[ 34%] Built target __idf_esp_driver_mcpwm
+[ 35%] Built target __idf_esp_driver_spi
+[ 36%] Built target __idf_esp_driver_pcnt
+[ 38%] Built target __idf_nvs_flash
+[ 39%] Built target __idf_esp_event
+[ 39%] Built target __idf_esp_driver_uart
+[ 39%] Built target __idf_esp_ringbuf
+[ 39%] Built target __idf_esp_driver_gptimer
+[ 40%] Built target __idf_esp_timer
+[ 41%] Built target __idf_cxx
+[ 42%] Built target __idf_pthread
+[ 44%] Built target __idf_newlib
+[ 46%] Built target __idf_freertos
+[ 51%] Built target __idf_esp_hw_support
+[ 52%] Built target __idf_esp_security
+[ 54%] Built target __idf_soc
+[ 54%] Built target __idf_heap
+[ 55%] Built target __idf_log
+[ 60%] Built target __idf_hal
+[ 61%] Built target __idf_esp_rom
+[ 61%] Built target __idf_esp_common
+[ 64%] Built target __idf_esp_system
+[ 66%] Built target __idf_spi_flash
+[ 67%] Built target __idf_esp_mm
+[ 69%] Built target __idf_bootloader_support
+[ 70%] Built target __idf_efuse
+[ 70%] Built target __idf_esp_partition
+[ 70%] Built target __idf_app_update
+[ 70%] Built target __idf_esp_bootloader_format
+[ 70%] Built target __idf_esp_app_format
+[ 72%] Built target mbedtls
+[ 73%] Built target mbedx509
+[ 82%] Built target mbedcrypto
+[ 83%] Built target p256m
+[ 83%] Built target everest
+[ 83%] Built target __idf_mbedtls
+[ 83%] Built target __idf_esp_pm
+[ 83%] Built target __idf_esp_driver_gpio
+[ 84%] Built target __idf_xtensa
+[ 85%] Built target __idf_esp_eth
+[ 85%] Built target __idf_esp_driver_cam
+[ 85%] Built target __idf_app_trace
+[ 87%] Built target __idf_console
+[ 87%] Built target __idf_unity
+[ 88%] Built target __idf_esp_hid
+[ 88%] Built target __idf_esp_https_server
+[ 88%] Built target __idf_protobuf-c
+[ 89%] Built target __idf_espcoredump
+[ 90%] Built target __idf_esp_lcd
+[ 90%] Built target __idf_json
+[ 91%] Built target __idf_mqtt
+[ 91%] Built target __idf_wear_levelling
+[ 92%] Built target __idf_rt
+[ 92%] Built target __idf_perfmon
+[ 92%] Built target __idf_nvs_sec_provider
+[ 93%] Built target __idf_spiffs
+[ 93%] Built target __idf_cmock
+[ 94%] Built target __idf_fatfs
+[ 95%] Built target __idf_protocomm
+[ 96%] Built target __idf_protocol_examples_common
+[ 96%] Built target __idf_esp_local_ctrl
+[ 97%] Built target __idf_wifi_provisioning
+[ 97%] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj
+[ 98%] Linking C static library libmain.a
+[ 98%] Built target __idf_main
+[ 98%] Generating ld/sections.ld
+[ 98%] Built target __ldgen_output_sections.ld
+[ 98%] Linking CXX executable projeto_TCP_Contador.elf
+[ 98%] Built target projeto_TCP_Contador.elf
+[100%] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/projeto_TCP_Contador.bin
+[100%] Built target gen_project_binary
+projeto_TCP_Contador.bin binary size 0x58070 bytes. Smallest app partition is 0x100000 bytes. 0xa7f90 bytes (66%) free.
+[100%] Built target app_check_size
+[100%] Built target app

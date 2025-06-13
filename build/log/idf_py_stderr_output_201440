@@ -1,0 +1,16 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:34:5: warning: 'smi_mdc_gpio_num' is deprecated: Please use smi_gpio instead [-Wdeprecated-declarations]
+   34 |     emac_config.smi_mdc_gpio_num = ETH_MDC_GPIO;
+      |     ^~~~~~~~~~~
+In file included from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:13,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth.h:15,
+                 from /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:14:
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h:171:17: note: declared here
+  171 |             int smi_mdc_gpio_num __attribute__((deprecated("Please use smi_gpio instead")));  /*!< SMI MDC GPIO number, set to -1 could bypass the SMI GPIO configuration */
+      |                 ^~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:35:5: warning: 'smi_mdio_gpio_num' is deprecated: Please use smi_gpio instead [-Wdeprecated-declarations]
+   35 |     emac_config.smi_mdio_gpio_num = ETH_MDIO_GPIO;
+      |     ^~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h:172:17: note: declared here
+  172 |             int smi_mdio_gpio_num __attribute__((deprecated("Please use smi_gpio instead"))); /*!< SMI MDIO GPIO number, set to -1 could bypass the SMI GPIO configuration */
+      |                 ^~~~~~~~~~~~~~~~~

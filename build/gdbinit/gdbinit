@@ -1,0 +1,2 @@
+source /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/gdbinit/symbols
+source /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/gdbinit/connect

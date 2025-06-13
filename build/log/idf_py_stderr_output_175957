@@ -1,0 +1,19 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:36:26: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdc_gpio_num'; did you mean 'mdio_num'?
+   36 |     emac_config.smi_gpio.mdc_gpio_num = ETH_MDC_GPIO;
+      |                          ^~~~~~~~~~~~
+      |                          mdio_num
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:37:26: error: 'emac_esp_smi_gpio_config_t' has no member named 'mdio_gpio_num'; did you mean 'mdio_num'?
+   37 |     emac_config.smi_gpio.mdio_gpio_num = ETH_MDIO_GPIO;
+      |                          ^~~~~~~~~~~~~
+      |                          mdio_num
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:59:17: error: implicit declaration of function 'esp_netif_create_default_ethernet'; did you mean 'esp_netif_get_default_netif'? [-Wimplicit-function-declaration]
+   59 |     eth_netif = esp_netif_create_default_ethernet();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 esp_netif_get_default_netif
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:59:15: error: assignment to 'esp_netif_t *' {aka 'struct esp_netif_obj *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   59 |     eth_netif = esp_netif_create_default_ethernet();
+      |               ^
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

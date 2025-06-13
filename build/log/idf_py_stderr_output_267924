@@ -1,0 +1,9 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:16:20: error: redefinition of 'TAG'
+   16 | static const char *TAG = "RMII_CLK_CHECK";
+      |                    ^~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:7:20: note: previous definition of 'TAG' with type 'const char *'
+    7 | static const char *TAG = "RMII_CLK_CHECK";
+      |                    ^~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

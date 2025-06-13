@@ -1,0 +1,19 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:64:49: error: implicit declaration of function 'eth_esp32_default_mac_config' [-Wimplicit-function-declaration]
+   64 |     esp_eth_mac_t *mac = esp_eth_mac_new_esp32(&eth_esp32_default_mac_config());
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:64:48: error: lvalue required as unary '&' operand
+   64 |     esp_eth_mac_t *mac = esp_eth_mac_new_esp32(&eth_esp32_default_mac_config());
+      |                                                ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:64:26: error: too few arguments to function 'esp_eth_mac_new_esp32'
+   64 |     esp_eth_mac_t *mac = esp_eth_mac_new_esp32(&eth_esp32_default_mac_config());
+      |                          ^~~~~~~~~~~~~~~~~~~~~
+In file included from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:13,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth.h:15,
+                 from /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:15:
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h:291:16: note: declared here
+  291 | esp_eth_mac_t *esp_eth_mac_new_esp32(const eth_esp32_emac_config_t *esp32_config, const eth_mac_config_t *config);
+      |                ^~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

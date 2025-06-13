@@ -1,0 +1,211 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'ethernet_init':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:37:5: warning: 'smi_mdc_gpio_num' is deprecated: Please use smi_gpio instead [-Wdeprecated-declarations]
+   37 |     emac_config.smi_mdc_gpio_num = ETH_MDC_GPIO;
+      |     ^~~~~~~~~~~
+In file included from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:13,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth.h:15,
+                 from /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:15:
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h:171:17: note: declared here
+  171 |             int smi_mdc_gpio_num __attribute__((deprecated("Please use smi_gpio instead")));  /*!< SMI MDC GPIO number, set to -1 could bypass the SMI GPIO configuration */
+      |                 ^~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:38:5: warning: 'smi_mdio_gpio_num' is deprecated: Please use smi_gpio instead [-Wdeprecated-declarations]
+   38 |     emac_config.smi_mdio_gpio_num = ETH_MDIO_GPIO;
+      |     ^~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h:172:17: note: declared here
+  172 |             int smi_mdio_gpio_num __attribute__((deprecated("Please use smi_gpio instead"))); /*!< SMI MDIO GPIO number, set to -1 could bypass the SMI GPIO configuration */
+      |                 ^~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:45:26: error: implicit declaration of function 'esp_eth_phy_new_lan8720'; did you mean 'esp_eth_phy_new_lan87xx'? [-Wimplicit-function-declaration]
+   45 |     esp_eth_phy_t *phy = esp_eth_phy_new_lan8720(&phy_config);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                          esp_eth_phy_new_lan87xx
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:45:26: error: initialization of 'esp_eth_phy_t *' {aka 'struct esp_eth_phy_s *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:5: error: unknown type name 'eth_config_t'; did you mean 'gpio_config_t'?
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |     ^~~~~~~~~~~~
+      |     gpio_config_t
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:172:9: error: field name not in record or union initializer
+  172 |         .mac = emac,                     \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:172:9: note: (near initialization for 'config')
+  172 |         .mac = emac,                     \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:46: error: initialization of 'int' from 'esp_eth_mac_t *' {aka 'struct esp_eth_mac_s *'} makes integer from pointer without a cast [-Wint-conversion]
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                                              ^~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:172:16: note: in definition of macro 'ETH_DEFAULT_CONFIG'
+  172 |         .mac = emac,                     \
+      |                ^~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:46: note: (near initialization for 'config')
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                                              ^~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:172:16: note: in definition of macro 'ETH_DEFAULT_CONFIG'
+  172 |         .mac = emac,                     \
+      |                ^~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:173:9: error: field name not in record or union initializer
+  173 |         .phy = ephy,                     \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:173:9: note: (near initialization for 'config')
+  173 |         .phy = ephy,                     \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:51: warning: excess elements in scalar initializer
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                                                   ^~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:173:16: note: in definition of macro 'ETH_DEFAULT_CONFIG'
+  173 |         .phy = ephy,                     \
+      |                ^~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:51: note: (near initialization for 'config')
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                                                   ^~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:173:16: note: in definition of macro 'ETH_DEFAULT_CONFIG'
+  173 |         .phy = ephy,                     \
+      |                ^~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:174:9: error: field name not in record or union initializer
+  174 |         .check_link_period_ms = 2000,    \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:174:9: note: (near initialization for 'config')
+  174 |         .check_link_period_ms = 2000,    \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:174:33: warning: excess elements in scalar initializer
+  174 |         .check_link_period_ms = 2000,    \
+      |                                 ^~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:174:33: note: (near initialization for 'config')
+  174 |         .check_link_period_ms = 2000,    \
+      |                                 ^~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:175:9: error: field name not in record or union initializer
+  175 |         .stack_input = NULL,             \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:175:9: note: (near initialization for 'config')
+  175 |         .stack_input = NULL,             \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: warning: excess elements in scalar initializer
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: (near initialization for 'config')
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:176:9: error: field name not in record or union initializer
+  176 |         .on_lowlevel_init_done = NULL,   \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:176:9: note: (near initialization for 'config')
+  176 |         .on_lowlevel_init_done = NULL,   \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: warning: excess elements in scalar initializer
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: (near initialization for 'config')
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:177:9: error: field name not in record or union initializer
+  177 |         .on_lowlevel_deinit_done = NULL, \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:177:9: note: (near initialization for 'config')
+  177 |         .on_lowlevel_deinit_done = NULL, \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: warning: excess elements in scalar initializer
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: (near initialization for 'config')
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:178:9: error: field name not in record or union initializer
+  178 |         .read_phy_reg = NULL,            \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:178:9: note: (near initialization for 'config')
+  178 |         .read_phy_reg = NULL,            \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: warning: excess elements in scalar initializer
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: (near initialization for 'config')
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:179:9: error: field name not in record or union initializer
+  179 |         .write_phy_reg = NULL,           \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:179:9: note: (near initialization for 'config')
+  179 |         .write_phy_reg = NULL,           \
+      |         ^
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: in expansion of macro 'ETH_DEFAULT_CONFIG'
+   48 |     eth_config_t config = ETH_DEFAULT_CONFIG(mac, phy);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: warning: excess elements in scalar initializer
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:48:27: note: (near initialization for 'config')
+In file included from /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/esp_system/include/esp_task.h:24,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/lwipopts.h:20,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/opt.h:51,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/sockets.h:42,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/lwip/include/lwip/sockets.h:8,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys/socket.h:15,
+                 from /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:2:
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:52:44: error: passing argument 1 of 'esp_eth_driver_install' from incompatible pointer type [-Wincompatible-pointer-types]
+   52 |     ESP_ERROR_CHECK(esp_eth_driver_install(&config, &eth_handle));
+      |                                            ^~~~~~~
+      |                                            |
+      |                                            int *
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_driver.h:194:58: note: expected 'const esp_eth_config_t *' but argument is of type 'int *'
+  194 | esp_err_t esp_eth_driver_install(const esp_eth_config_t *config, esp_eth_handle_t *out_hdl);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:55:17: error: implicit declaration of function 'esp_netif_new_netif'; did you mean 'esp_netif_find_if'? [-Wimplicit-function-declaration]
+   55 |     eth_netif = esp_netif_new_netif(&esp_netif_config_t{
+      |                 ^~~~~~~~~~~~~~~~~~~
+      |                 esp_netif_find_if
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:55:38: error: expected expression before 'esp_netif_config_t'
+   55 |     eth_netif = esp_netif_new_netif(&esp_netif_config_t{
+      |                                      ^~~~~~~~~~~~~~~~~~
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c: In function 'app_main':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:135:5: error: implicit declaration of function 'esp_netif_add_event_handler'; did you mean 'esp_netif_get_event_id'? [-Wimplicit-function-declaration]
+  135 |     esp_netif_add_event_handler(ESP_NETIF_NET_EVENT_GOT_IP, got_ip_event, NULL);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     esp_netif_get_event_id
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:135:33: error: 'ESP_NETIF_NET_EVENT_GOT_IP' undeclared (first use in this function); did you mean 'ESP_NETIF_IP_EVENT_GOT_IP'?
+  135 |     esp_netif_add_event_handler(ESP_NETIF_NET_EVENT_GOT_IP, got_ip_event, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 ESP_NETIF_IP_EVENT_GOT_IP
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/tcp_eth.c:135:33: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2
