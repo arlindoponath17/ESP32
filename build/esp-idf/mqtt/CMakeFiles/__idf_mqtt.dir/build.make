@@ -125,12 +125,42 @@ esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.s"
 	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c -o CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.s
 
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/flags.make
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj: /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj -MF CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj.d -o CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj -c /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c
+
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.i"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c > CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.i
+
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.s"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c -o CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.s
+
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/flags.make
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj: /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj -MF CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj.d -o CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj -c /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c
+
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.i"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c > CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.i
+
+esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.s"
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c -o CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.s
+
 # Object files for target __idf_mqtt
 __idf_mqtt_OBJECTS = \
 "CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj" \
 "CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj" \
 "CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj" \
-"CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj"
+"CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj" \
+"CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj" \
+"CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj"
 
 # External object files for target __idf_mqtt
 __idf_mqtt_EXTERNAL_OBJECTS =
@@ -139,9 +169,11 @@ esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_cli
 esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
 esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
 esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj
+esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj
 esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make
 esp-idf/mqtt/libmqtt.a: esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libmqtt.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libmqtt.a"
 	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && $(CMAKE_COMMAND) -P CMakeFiles/__idf_mqtt.dir/cmake_clean_target.cmake
 	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_mqtt.dir/link.txt --verbose=$(VERBOSE)
 

@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj.d"
   "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj.d"
   "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_outbox.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj.d"
   "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj.d"
+  "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj.d"
   "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt_client.c" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj" "gcc" "esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj.d"
   )
 

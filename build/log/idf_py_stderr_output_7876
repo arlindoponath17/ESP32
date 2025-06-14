@@ -1,0 +1,27 @@
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp: In function 'void mqtt_event_handler(void*, esp_event_base_t, int32_t, void*)':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp:20:37: error: invalid conversion from 'void*' to 'esp_mqtt_event_handle_t' {aka 'esp_mqtt_event_t*'} [-fpermissive]
+   20 |     esp_mqtt_event_handle_t event = event_data;
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     void*
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp: In function 'void app_main()':
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp:41:5: error: 'esp_mqtt_client_config_t' has no non-static data member named 'uri'
+   41 |     };
+      |     ^
+In file included from /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event.h:17,
+                 from /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt_client.h:14,
+                 from /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp:1:
+/home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event_base.h:30:32: error: invalid conversion from 'int' to 'esp_mqtt_event_id_t' [-fpermissive]
+   30 | #define ESP_EVENT_ANY_ID       -1               /**< register handler for any event id */
+      |                                ^~
+      |                                |
+      |                                int
+/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main/teste_mqtt.cpp:44:44: note: in expansion of macro 'ESP_EVENT_ANY_ID'
+   44 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+      |                                            ^~~~~~~~~~~~~~~~
+/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt_client.h:628:62: note:   initializing argument 2 of 'esp_err_t esp_mqtt_client_register_event(esp_mqtt_client_handle_t, esp_mqtt_event_id_t, esp_event_handler_t, void*)'
+  628 |                                          esp_mqtt_event_id_t event,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/teste_mqtt.cpp.obj] Erro 1
+make[1]: *** [CMakeFiles/Makefile2:5721: esp-idf/main/CMakeFiles/__idf_main.dir/all] Erro 2
+make: *** [Makefile:136: all] Erro 2

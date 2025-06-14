@@ -175,6 +175,30 @@ __idf_mqtt/fast:
 	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build
 .PHONY : __idf_mqtt/fast
 
+esp-mqtt/lib/mqtt5_msg.obj: esp-mqtt/lib/mqtt5_msg.c.obj
+.PHONY : esp-mqtt/lib/mqtt5_msg.obj
+
+# target to build an object file
+esp-mqtt/lib/mqtt5_msg.c.obj:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.obj
+.PHONY : esp-mqtt/lib/mqtt5_msg.c.obj
+
+esp-mqtt/lib/mqtt5_msg.i: esp-mqtt/lib/mqtt5_msg.c.i
+.PHONY : esp-mqtt/lib/mqtt5_msg.i
+
+# target to preprocess a source file
+esp-mqtt/lib/mqtt5_msg.c.i:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.i
+.PHONY : esp-mqtt/lib/mqtt5_msg.c.i
+
+esp-mqtt/lib/mqtt5_msg.s: esp-mqtt/lib/mqtt5_msg.c.s
+.PHONY : esp-mqtt/lib/mqtt5_msg.s
+
+# target to generate assembly for a file
+esp-mqtt/lib/mqtt5_msg.c.s:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt5_msg.c.s
+.PHONY : esp-mqtt/lib/mqtt5_msg.c.s
+
 esp-mqtt/lib/mqtt_msg.obj: esp-mqtt/lib/mqtt_msg.c.obj
 .PHONY : esp-mqtt/lib/mqtt_msg.obj
 
@@ -247,6 +271,30 @@ esp-mqtt/lib/platform_esp32_idf.c.s:
 	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.s
 .PHONY : esp-mqtt/lib/platform_esp32_idf.c.s
 
+esp-mqtt/mqtt5_client.obj: esp-mqtt/mqtt5_client.c.obj
+.PHONY : esp-mqtt/mqtt5_client.obj
+
+# target to build an object file
+esp-mqtt/mqtt5_client.c.obj:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.obj
+.PHONY : esp-mqtt/mqtt5_client.c.obj
+
+esp-mqtt/mqtt5_client.i: esp-mqtt/mqtt5_client.c.i
+.PHONY : esp-mqtt/mqtt5_client.i
+
+# target to preprocess a source file
+esp-mqtt/mqtt5_client.c.i:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.i
+.PHONY : esp-mqtt/mqtt5_client.c.i
+
+esp-mqtt/mqtt5_client.s: esp-mqtt/mqtt5_client.c.s
+.PHONY : esp-mqtt/mqtt5_client.s
+
+# target to generate assembly for a file
+esp-mqtt/mqtt5_client.c.s:
+	cd /home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build && $(MAKE) $(MAKESILENT) -f esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/build.make esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt5_client.c.s
+.PHONY : esp-mqtt/mqtt5_client.c.s
+
 esp-mqtt/mqtt_client.obj: esp-mqtt/mqtt_client.c.obj
 .PHONY : esp-mqtt/mqtt_client.obj
 
@@ -284,6 +332,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... __idf_mqtt"
+	@echo "... esp-mqtt/lib/mqtt5_msg.obj"
+	@echo "... esp-mqtt/lib/mqtt5_msg.i"
+	@echo "... esp-mqtt/lib/mqtt5_msg.s"
 	@echo "... esp-mqtt/lib/mqtt_msg.obj"
 	@echo "... esp-mqtt/lib/mqtt_msg.i"
 	@echo "... esp-mqtt/lib/mqtt_msg.s"
@@ -293,6 +344,9 @@ help:
 	@echo "... esp-mqtt/lib/platform_esp32_idf.obj"
 	@echo "... esp-mqtt/lib/platform_esp32_idf.i"
 	@echo "... esp-mqtt/lib/platform_esp32_idf.s"
+	@echo "... esp-mqtt/mqtt5_client.obj"
+	@echo "... esp-mqtt/mqtt5_client.i"
+	@echo "... esp-mqtt/mqtt5_client.s"
 	@echo "... esp-mqtt/mqtt_client.obj"
 	@echo "... esp-mqtt/mqtt_client.i"
 	@echo "... esp-mqtt/mqtt_client.s"

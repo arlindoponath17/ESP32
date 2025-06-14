@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "projeto_TCP_Contador",
-    "project_version":    "1",
+    "project_version":    "9697c5c-dirty",
     "project_path":       "/home/a/Documentos/workspace_esp32/projeto_TCP_Contador",
     "idf_path":           "/home/a/Downloads/esp-idf-v5.4.1",
     "build_dir":          "/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build",
@@ -1225,7 +1225,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/build/esp-idf/mqtt/libmqtt.a",
-            "sources": [ "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt_client.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
+            "sources": [ "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt_client.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/mqtt5_msg.c", "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/mqtt5_client.c" ],
             "include_dirs": [ "/home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include" ]
         },
         "newlib": {

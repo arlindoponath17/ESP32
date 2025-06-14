@@ -1,0 +1,11 @@
+CMake Error at /home/a/Downloads/esp-idf-v5.4.1/tools/cmake/component.cmake:490 (add_library):
+  add_library cannot create target "__idf_main" because another target with
+  the same name already exists.  The existing target is a static library
+  created in source directory
+  "/home/a/Documentos/workspace_esp32/projeto_TCP_Contador/main".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  main/CMakeLists.txt:17 (idf_component_register)
+
+
+make: *** [Makefile:2062: cmake_check_build_system] Erro 1

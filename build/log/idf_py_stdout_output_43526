@@ -1,0 +1,322 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 11 2025 21:00:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b460h (111712) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b488 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002b4ac vaddr=3ffb0000 size=0256ch (  9580) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002da20 vaddr=40080000 size=025f8h (  9720) load[0m
+[0;32mI (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=62bf4h (404468) map[0m
+[0;32mI (285) esp_image: segment 5: paddr=00092c1c vaddr=400825f8 size=0c32ch ( 49964) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (331) app_init: Project name:     projeto_TCP_Contador[0m
+[0;32mI (336) app_init: App version:      9697c5c-dirty[0m
+[0;32mI (340) app_init: Compile time:     Jun 13 2025 21:46:29[0m
+[0;32mI (345) app_init: ELF file SHA256:  4dddd7f0a...[0m
+[0;32mI (350) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (353) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (357) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (361) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (365) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (372) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (376) heap_init: At 3FFB3EA8 len 0002C158 (176 KiB): DRAM[0m
+[0;32mI (382) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (387) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (393) heap_init: At 4008E924 len 000116DC (69 KiB): IRAM[0m
+[0;32mI (399) spi_flash: detected chip: generic[0m
+[0;32mI (402) spi_flash: flash io: dio[0m
+[0;33mW (404) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (418) main_task: Started on CPU0[0m
+[0;32mI (428) main_task: Calling app_main()[0m
+[0;32mI (438) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1458) esp_eth.netif.netif_glue: f8:b3:b7:29:a8:eb[0m
+[0;32mI (1458) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (3058) main_task: Returned from app_main()[0m
+[0;32mI (4568) MQTT_ETH: IP recebido: 192.168.1.100[0m
+[0;32mI (4568) esp_netif_handlers: eth ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4578) MQTT_ETH: MQTT conectado[0m
+[0;32mI (4588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (9588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (14588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (19588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (24588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (29588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (34588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (39588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (44588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (49588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (54588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (59588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (64588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (69588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (74588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (79588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (84588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (89588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (94588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (99588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (104588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (109588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (114588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (119588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (124588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (129588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (134588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (139588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (144588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (149588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (154588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (159588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (164588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (169588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (174588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (179588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (184588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (189588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (194588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (199588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (204588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (209588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (214588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (219588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (224588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (229588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (234588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (239588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (244588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (249588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (254588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (259588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (264588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (269588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (274588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (279588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (284588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (289588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (294588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (299588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (304588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (309588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (314588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (319588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (324588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (329588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (334588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (339588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (344588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (349588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (354588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (359588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (364588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (369588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (374588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (379588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (384588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (389588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (394588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (399588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (404588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (409588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (414588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (419588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (424588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (429588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (434588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (439588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (444588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (449588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (454588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (459588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (464588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (469588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (474588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (479588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (484588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (489588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (494588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (499588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (504588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (509588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (514588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (519588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (524588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (529588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (534588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (539588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (544588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (549588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (554588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (559588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (564588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (569588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (574588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (579588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (584588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (589588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (594588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (599588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (604588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (609588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (614588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (619588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (624588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (629588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (634588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (639588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (644588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (649588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (654588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (659588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (664588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (669588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (674588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (679588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (684588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (689588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (694588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (699588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (704588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (709588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (714588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (719588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (724588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (729588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (734588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (739588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (744588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (749588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (754588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (759588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (764588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (769588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (774588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (779588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (784588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (789588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (794588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (799588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (804588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (809588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (814588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (819588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (824588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (829588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (834588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (839588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (844588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (849588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (854588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (859588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (864588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (869588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (874588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (879588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (884588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (889588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (894588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (899588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (904588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (909588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (914588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (919588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (924588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (929588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (934588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (939588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (944588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (949588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (954588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (959588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (964588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (969588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (974588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (979588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (984588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (989588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (994588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (999588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1004588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1009588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1014588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1019588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1024588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1029588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1034588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1039588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1044588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1049588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1054588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1059588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1064588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1069588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1074588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1079588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1084588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1089588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1094588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1099588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1104588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1109588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1114588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1119588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1124588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1129588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1134588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1139588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1144588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1149588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1154588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1159588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1164588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1169588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1174588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1179588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1184588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1189588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1194588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1199588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1204588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1209588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1214588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1219588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1224588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1229588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1234588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1239588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1244588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1249588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1254588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1259588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1264588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1269588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1274588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1279588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1284588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1289588) MQTT_ETH: Mensagem enviada: {"id":"esteira1

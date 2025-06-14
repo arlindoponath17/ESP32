@@ -30,40 +30,9 @@ esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj: \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys/socket.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/include/lwip/sockets.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/sockets.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/opt.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/lwipopts.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/sys/unistd.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/sys/select.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/timespec.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timespec.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_pthreadtypes.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/sched.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/types.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/unistd.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/fcntl.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_default_fcntl.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stat.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/time.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/time.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/sys/time.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/sys/ioctl.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/sys/poll.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/esp_system/include/esp_task.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/config/include/freertos/FreeRTOSConfig.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
@@ -83,7 +52,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj: \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/xtensa/include/xtensa/xtruntime.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/xtensa/esp32/include/xtensa/config/specreg.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/xtensa/include/xtensa/xtruntime-core-state.h \
@@ -98,8 +66,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj: \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_common/include/esp_bit_defs.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_common/include/esp_attr.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/esp_intr_alloc.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_common/include/esp_err.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_common/include/esp_compiler.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/esp_intr_types.h \
@@ -138,49 +104,17 @@ esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj: \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/esp_hw_support/include/esp_random.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/sntp/sntp_get_set_time.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/sockets_ext.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/freertos/include/arch/sys_arch.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/debug.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/arch.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/arch/cc.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/errno.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/errno.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/errno.h \
- /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/ctype.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/ip_addr.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/def.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/ip4_addr.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/ip6_addr.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/def.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/ip6_zone.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/netif.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/err.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/pbuf.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/stats.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/mem.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/memp.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/priv/memp_std.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/priv/memp_priv.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/inet.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/errno.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/newlib/platform_include/net/if.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/if_api.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/netdb.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/include/lwip/netdb.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/lwip/src/include/lwip/netdb.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/include/arpa/inet.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event.h \
- /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event_base.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/log/include/esp_log.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/log/include/esp_log_level.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/log/include/esp_log_color.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/log/include/esp_log_buffer.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/log/include/esp_log_timestamp.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event_base.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_netif/include/esp_netif.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_netif/include/esp_netif_ip_addr.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_netif/include/esp_netif_types.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_netif/include/esp_netif_defaults.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/nvs_flash/include/nvs_flash.h \
@@ -201,6 +135,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/tcp_eth.c.obj: \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_mac_esp.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_phy.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_eth/include/esp_eth_netif_glue.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt_client.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/tcp_transport/include/esp_transport.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt5_client.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt_client.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_driver_gpio/include/driver/gpio.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/hal/include/hal/gpio_types.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/soc/esp32/include/soc/gpio_num.h \

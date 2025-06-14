@@ -113,6 +113,8 @@ esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj: \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/esp_event/include/esp_event_base.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt5_client.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt_client.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt_client_priv.h \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdatomic.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/platform.h \
@@ -139,6 +141,11 @@ esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj: \
  /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt_config.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt5_client_priv.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/include/mqtt5_client.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt_client_priv.h \
+ /home/a/Downloads/esp-idf-v5.4.1/components/mqtt/esp-mqtt/lib/include/mqtt5_msg.h \
+ /home/a/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/queue.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/tcp_transport/include/esp_transport_tcp.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/tcp_transport/include/esp_transport.h \
  /home/a/Downloads/esp-idf-v5.4.1/components/lwip/port/esp32xx/include/sys/socket.h \

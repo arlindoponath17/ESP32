@@ -1,0 +1,828 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 11 2025 21:00:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b440h (111680) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b468 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002b48c vaddr=3ffb0000 size=0256ch (  9580) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002da00 vaddr=40080000 size=02618h (  9752) load[0m
+[0;32mI (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=62a54h (404052) map[0m
+[0;32mI (285) esp_image: segment 5: paddr=00092a7c vaddr=40082618 size=0c30ch ( 49932) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (330) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (331) app_init: Project name:     projeto_TCP_Contador[0m
+[0;32mI (336) app_init: App version:      9697c5c-dirty[0m
+[0;32mI (340) app_init: Compile time:     Jun 13 2025 21:46:29[0m
+[0;32mI (345) app_init: ELF file SHA256:  a2b91eb71...[0m
+[0;32mI (349) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (353) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (357) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (361) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (365) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (371) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (376) heap_init: At 3FFB3EA8 len 0002C158 (176 KiB): DRAM[0m
+[0;32mI (382) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (387) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (392) heap_init: At 4008E924 len 000116DC (69 KiB): IRAM[0m
+[0;32mI (399) spi_flash: detected chip: generic[0m
+[0;32mI (401) spi_flash: flash io: dio[0m
+[0;33mW (404) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (417) main_task: Started on CPU0[0m
+[0;32mI (427) main_task: Calling app_main()[0m
+[0;32mI (427) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1457) esp_eth.netif.netif_glue: f8:b3:b7:29:a8:eb[0m
+[0;32mI (1457) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (4357) main_task: Returned from app_main()[0m
+[0;32mI (5857) MQTT_ETH: IP recebido: 192.168.1.100[0m
+[0;32mI (5857) esp_netif_handlers: eth ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[1;31mE (5857) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (5857) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5867) mqtt_client: Error transport connect[0m
+[0;32mI (5867) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (10877) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (15877) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (20867) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (20867) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (20867) mqtt_client: Error transport connect[0m
+[0;32mI (20877) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (25877) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (30877) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (35877) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (35877) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (35877) mqtt_client: Error transport connect[0m
+[0;32mI (35887) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (40887) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (45887) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (50887) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (50887) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (50887) mqtt_client: Error transport connect[0m
+[0;32mI (50897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (55897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (60897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (65887) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (65887) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (65887) mqtt_client: Error transport connect[0m
+[0;32mI (65897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (70897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (75897) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (80897) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (80897) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (80897) mqtt_client: Error transport connect[0m
+[0;32mI (80907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (85907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (90907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (95897) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (95897) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (95897) mqtt_client: Error transport connect[0m
+[0;32mI (95907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (100907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (105907) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (110907) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (110907) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (110907) mqtt_client: Error transport connect[0m
+[0;32mI (110917) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (115917) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (120917) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (125917) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (125917) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (125917) mqtt_client: Error transport connect[0m
+[0;32mI (125927) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (130927) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (135927) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (140927) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (140927) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (140927) mqtt_client: Error transport connect[0m
+[0;32mI (140937) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (145937) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (150937) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (155937) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (155937) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (155937) mqtt_client: Error transport connect[0m
+[0;32mI (155947) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (160947) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (165947) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (170947) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (170947) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (170947) mqtt_client: Error transport connect[0m
+[0;32mI (170957) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (175957) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (180957) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (185957) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (185957) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (185957) mqtt_client: Error transport connect[0m
+[0;32mI (185967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (190967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (195967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (200957) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (200957) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (200957) mqtt_client: Error transport connect[0m
+[0;32mI (200967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (205967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (210967) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (215967) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (215967) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (215967) mqtt_client: Error transport connect[0m
+[0;32mI (215977) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (220977) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (225977) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (230977) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (230977) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (230977) mqtt_client: Error transport connect[0m
+[0;32mI (230987) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (235987) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (240987) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (245987) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (245987) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (245987) mqtt_client: Error transport connect[0m
+[0;32mI (245997) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (250997) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (255997) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (260997) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (260997) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (260997) mqtt_client: Error transport connect[0m
+[0;32mI (261007) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (266007) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (271007) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (276007) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (276007) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (276007) mqtt_client: Error transport connect[0m
+[0;32mI (276017) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (281017) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (286017) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (291017) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (291017) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (291017) mqtt_client: Error transport connect[0m
+[0;32mI (291027) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (296027) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (301027) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (306027) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (306027) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (306027) mqtt_client: Error transport connect[0m
+[0;32mI (306037) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (311037) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (316037) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (321037) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (321037) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (321037) mqtt_client: Error transport connect[0m
+[0;32mI (321047) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (326047) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (331047) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (336047) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (336047) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (336047) mqtt_client: Error transport connect[0m
+[0;32mI (336057) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (341057) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (346057) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (351057) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (351057) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (351057) mqtt_client: Error transport connect[0m
+[0;32mI (351067) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (356067) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (361067) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (366067) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (366067) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (366067) mqtt_client: Error transport connect[0m
+[0;32mI (366077) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (371077) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (376077) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (381077) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (381077) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (381077) mqtt_client: Error transport connect[0m
+[0;32mI (381087) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (386087) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (391087) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (396087) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (396087) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (396087) mqtt_client: Error transport connect[0m
+[0;32mI (396097) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (401097) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (406097) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (411097) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (411097) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (411097) mqtt_client: Error transport connect[0m
+[0;32mI (411107) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (416107) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (421107) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (426107) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (426107) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (426107) mqtt_client: Error transport connect[0m
+[0;32mI (426117) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (431117) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (436117) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (441117) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (441117) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (441117) mqtt_client: Error transport connect[0m
+[0;32mI (441127) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (446127) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (451127) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (456127) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (456127) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (456127) mqtt_client: Error transport connect[0m
+[0;32mI (456137) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (461137) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (466137) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (471137) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[1;31mE (471137) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (471137) mqtt_client: Error transport connect[0m
+[0;32mI (471147) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (476147) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 11 2025 21:00:01[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b440h (111680) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002b468 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002b48c vaddr=3ffb0000 size=0256ch (  9580) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002da00 vaddr=40080000 size=02618h (  9752) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=62a54h (404052) map[0m
+[0;32mI (285) esp_image: segment 5: paddr=00092a7c vaddr=40082618 size=0c30ch ( 49932) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) app_init: Application information:[0m
+[0;32mI (331) app_init: Project name:     projeto_TCP_Contador[0m
+[0;32mI (336) app_init: App version:      9697c5c-dirty[0m
+[0;32mI (340) app_init: Compile time:     Jun 13 2025 21:46:29[0m
+[0;32mI (345) app_init: ELF file SHA256:  a2b91eb71...[0m
+[0;32mI (350) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (354) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (357) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (361) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (366) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (372) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (377) heap_init: At 3FFB3EA8 len 0002C158 (176 KiB): DRAM[0m
+[0;32mI (382) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (387) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (393) heap_init: At 4008E924 len 000116DC (69 KiB): IRAM[0m
+[0;32mI (400) spi_flash: detected chip: generic[0m
+[0;32mI (402) spi_flash: flash io: dio[0m
+[0;33mW (405) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (418) main_task: Started on CPU0[0m
+[0;32mI (428) main_task: Calling app_main()[0m
+[0;32mI (428) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1458) esp_eth.netif.netif_glue: f8:b3:b7:29:a8:eb[0m
+[0;32mI (1458) esp_eth.netif.netif_glue: ethernet attached to netif[0m
+[0;32mI (4358) main_task: Returned from app_main()[0m
+[0;32mI (5858) MQTT_ETH: IP recebido: 192.168.1.100[0m
+[0;32mI (5858) esp_netif_handlers: eth ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (5868) MQTT_ETH: MQTT conectado[0m
+[0;32mI (5868) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (10878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (15878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (20878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (25878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (30878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (35878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (40878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (45878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (50878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (55878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (60878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (65878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (70878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (75878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (80878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (85878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (90878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (95878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (100878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (105878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (110878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (115878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (120878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (125878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (130878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (135878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (140878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (145878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (150878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (155878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (160878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (165878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (170878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (175878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (180878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (185878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (190878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (195878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (200878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (205878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (210878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (215878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (220878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (225878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (230878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (235878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (240878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (245878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (250878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (255878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (260878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (265878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (270878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (275878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (280878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (285878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (290878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (295878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (300878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (305878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (310878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (315878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (320878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (325878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (330878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (335878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (340878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (345878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (350878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (355878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (360878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (365878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (370878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (375878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (380878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (385878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (390878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (395878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (400878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (405878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (410878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (415878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (420878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (425878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (430878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (435878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (440878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (445878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (450878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (455878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (460878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (465878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (470878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (475878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (480878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (485878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (490878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (495878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (500878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (505878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (510878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (515878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (520878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (525878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (530878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (535878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (540878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (542358) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[1;31mE (542358) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (545878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (550878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (555878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (557358) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (557358) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (557358) mqtt_client: Error transport connect[0m
+[0;32mI (560878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (565878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (569508) MQTT_ETH: IP recebido: 192.168.1.100[0m
+[0;32mI (569508) esp_netif_handlers: eth ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (569518) MQTT_ETH: MQTT conectado[0m
+[0;32mI (569528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (570878) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (572358) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (572358) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (572368) MQTT_ETH: MQTT conectado[0m
+[1;31mE (572368) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (582388) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (582388) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (582388) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (582398) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (582398) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (582408) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (582408) MQTT_ETH: MQTT conectado[0m
+[1;31mE (582418) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (582428) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (587408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (587408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (592408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (592408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (597408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (597408) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (597438) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (597448) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (597448) MQTT_ETH: MQTT conectado[0m
+[1;31mE (597448) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (607468) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (607468) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (607468) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (607478) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (607478) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (607488) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (607488) MQTT_ETH: MQTT conectado[0m
+[1;31mE (607498) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (607508) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (612488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (612488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (617488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (617488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (622488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (622488) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (622528) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (622528) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (622528) MQTT_ETH: MQTT conectado[0m
+[1;31mE (622528) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (632548) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (632548) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (632548) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (632568) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (632568) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (632568) MQTT_ETH: MQTT conectado[0m
+[1;31mE (632578) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (632578) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (632588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (637588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (637598) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (642588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (642598) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (647588) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (647598) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (647598) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (647598) MQTT_ETH: MQTT conectado[0m
+[1;31mE (647598) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (657628) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (657628) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (657628) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (657638) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (657648) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (657648) MQTT_ETH: MQTT conectado[0m
+[1;31mE (657648) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (657658) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (657658) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (662648) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (662678) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (667648) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (667678) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (672648) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (672678) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (672678) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (672678) MQTT_ETH: MQTT conectado[0m
+[1;31mE (672678) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (672688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;33mW (682698) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (682698) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (682698) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (682708) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (682718) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (682718) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (682718) MQTT_ETH: MQTT conectado[0m
+[1;31mE (682728) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (682748) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (687718) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (687748) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (692718) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (692748) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (697718) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (697748) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (697748) MQTT_ETH: MQTT conectado[0m
+[1;31mE (697748) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (697758) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (697758) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;33mW (707778) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (707778) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (707778) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (707798) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (707798) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (707798) MQTT_ETH: MQTT conectado[0m
+[1;31mE (707808) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (707818) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (707818) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (712818) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (712828) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (717818) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (717828) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (722818) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (722828) MQTT_ETH: MQTT conectado[0m
+[0;32mI (722828) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (722828) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (722838) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (722848) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (732858) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (732858) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (732858) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (732878) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (732878) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (732878) MQTT_ETH: MQTT conectado[0m
+[1;31mE (732888) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (732898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (732898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (737898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (737908) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (742898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (742908) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (747898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (747908) MQTT_ETH: MQTT conectado[0m
+[0;32mI (747908) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (747908) transport_base: poll_write select error 104, errno = Connection reset by peer, fd = 54[0m
+[0;33mW (747918) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[1;31mE (747928) mqtt_client: Writing failed: errno=119[0m
+[1;31mE (747928) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (747938) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (747948) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (747958) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (752898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (752928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (757898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (757928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (762898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (762928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (762958) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (762968) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (762968) MQTT_ETH: MQTT conectado[0m
+[1;31mE (762968) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (767898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (767928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (772898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (772928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (777898) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (777928) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (777978) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (777978) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (777978) MQTT_ETH: MQTT conectado[0m
+[1;31mE (777988) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (788008) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (788008) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (788008) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (788018) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (788018) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (788028) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (788028) MQTT_ETH: MQTT conectado[0m
+[1;31mE (788038) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (788048) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (793028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (793028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (798028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (798028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (799848) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (803028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (803028) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (803068) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (803068) MQTT_ETH: MQTT conectado[0m
+[1;31mE (803068) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (803078) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (813088) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (813088) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (813088) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (813098) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (813098) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (813108) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (813108) MQTT_ETH: MQTT conectado[0m
+[1;31mE (813118) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (813128) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (818108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (818108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (823108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (823108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (828108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (828108) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (828148) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (828148) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (828148) MQTT_ETH: MQTT conectado[0m
+[1;31mE (828148) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (838168) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (838168) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (838168) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (838178) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (838178) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (838188) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (838188) MQTT_ETH: MQTT conectado[0m
+[1;31mE (838198) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (838208) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (842538) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (843188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (843188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (846688) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (847758) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (848188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (848188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (848958) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (849928) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (850928) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (851808) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (852668) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (853188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (853188) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (853228) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (853228) MQTT_ETH: MQTT conectado[0m
+[1;31mE (853228) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (853238) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (863248) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (863248) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (863248) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (863268) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (863268) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (863268) MQTT_ETH: MQTT conectado[0m
+[1;31mE (863278) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (863288) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (863298) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (865848) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (867208) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (868288) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (868298) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (868508) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (869718) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (871068) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (872248) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (873118) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (873288) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (873298) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (874368) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (875198) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (876008) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (876698) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (877358) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (877978) MQTT_ETH: Comando recebido: {"acao":"ligar"}[0m
+[0;32mI (878288) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (878298) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (878298) MQTT_ETH: MQTT conectado[0m
+[1;31mE (878298) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (878298) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (878308) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (888328) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (888328) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (888328) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (888348) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (888348) MQTT_ETH: MQTT conectado[0m
+[1;31mE (888348) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (888358) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (888358) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (888358) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (893368) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (893378) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (898368) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (898378) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (903368) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (903378) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (903378) MQTT_ETH: MQTT conectado[0m
+[1;31mE (903378) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (903388) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (903388) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (913408) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (913408) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (913408) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[0;32mI (913428) MQTT_ETH: MQTT conectado[0m
+[1;31mE (913428) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (913428) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (913438) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (913448) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (913448) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (918448) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (918458) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (923448) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (923458) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (928448) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (928458) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (928458) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[0;32mI (928458) MQTT_ETH: MQTT conectado[0m
+[1;31mE (928468) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (928468) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (938488) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (938488) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (938488) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (938508) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (938508) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (938508) MQTT_ETH: MQTT conectado[0m
+[1;31mE (938518) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (938528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (938528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (943528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (943538) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (948528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (948538) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (953528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (953538) MQTT_ETH: MQTT conectado[0m
+[0;32mI (953538) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (953538) transport_base: poll_write select error 104, errno = Connection reset by peer, fd = 54[0m
+[0;33mW (953548) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[1;31mE (953558) mqtt_client: Writing failed: errno=119[0m
+[1;31mE (953558) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (953568) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (953578) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (953578) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (958528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (958548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (963528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (963548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (968528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (968548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (968598) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (968598) MQTT_ETH: MQTT conectado[0m
+[1;31mE (968598) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (968608) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (973528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (973548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (978528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (978548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (983528) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (983548) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (983628) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (983628) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (983628) MQTT_ETH: MQTT conectado[0m
+[1;31mE (983628) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (993648) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (993648) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (993648) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (993668) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (993668) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (993668) MQTT_ETH: MQTT conectado[0m
+[1;31mE (993678) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (993688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (993688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (998688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (998698) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1003688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1003698) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1008688) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1008698) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1008698) MQTT_ETH: MQTT conectado[0m
+[1;31mE (1008698) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (1008708) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (1008708) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (1018728) transport_base: Poll timeout or error, errno=Connection already in progress, fd=-1, timeout_ms=10000[0m
+[1;31mE (1018728) mqtt_client: Writing didn't complete in specified timeout: errno=119[0m
+[1;31mE (1018728) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (1018748) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (1018748) MQTT_ETH: MQTT conectado[0m
+[1;31mE (1018748) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (1018758) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (1018768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1018768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1023768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1023778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1028768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1028778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1033768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1033778) MQTT_ETH: MQTT conectado[0m
+[0;32mI (1033778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[1;31mE (1033778) transport_base: poll_write select error 104, errno = Connection reset by peer, fd = 54[0m
+[0;33mW (1033788) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[1;31mE (1033798) mqtt_client: Writing failed: errno=119[0m
+[1;31mE (1033798) mqtt_client: Error to send subscribe message, first topic: esp32/comando, qos: 0[0m
+[1;31mE (1033808) transport_base: tcp_read error, errno=Connection reset by peer[0m
+[1;31mE (1033818) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=104[0m
+[1;31mE (1033828) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (1038768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1038778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1043768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1043778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1048768) MQTT_ETH: Mensagem enviada: {"id":"esteira1","valor":42}[0m
+[0;32mI (1048778) MQTT_ETH: Mensagem enviada: {"id":"esteira1","val

@@ -1,7 +1,7 @@
 idf_build_get_property(target IDF_TARGET)
 
 if(${target} STREQUAL "linux")
-    set(requires esp_event esp_stubs protocol_examples_common nvs_flash esp_eth esp_netif esp_eth  freertos lwip)
+    set(requires esp_mqtt esp_event esp_stubs protocol_examples_common nvs_flash esp_eth esp_netif esp_eth  freertos lwip)
 endif()
 
 if("${CONFIG_EXAMPLE_IPV4}" STREQUAL y)
@@ -13,3 +13,7 @@ endif()
 idf_component_register(SRCS  "tcp_eth.c" 
                                 INCLUDE_DIRS "."
                                 REQUIRES ${requires})
+
+#idf_component_register(SRCS  "teste_mqtt.cpp" 
+#                                INCLUDE_DIRS "."
+#                                REQUIRES ${requires})
